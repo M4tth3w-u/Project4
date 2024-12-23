@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="home-css.css">
+    <link rel="stylesheet" href="membership-css.css">
+    <link rel="stylesheet" href="account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="../icon/ICON.jpg">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <img id="Logo" src="../ICON/ICON.jpg" alt="RG TEAM">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="contact.html" id="contact">Kontak</a></li>
+                <li><a href="free-trial.html" id="free-trial">Coba Gratis</a></li>
+                <li><a href="home.html" id="home">Beranda</a></li>
+                <li><a href="#" id="login-link">Masuk</a></li>
+                <li> <a href="#" id="account-link" style="display:none; margin-left:-70px;">Akun</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <div id="delete-modal" class="del-modal">
+        <div class="modal-content">
+               <span class="close">&times;</span>
+               <form>
+                <div class="container">
+                    <h1>Hapus Akun</h1>
+                    <p>Apakah kamu yakin ingin menghapus akun?</p>
+              
+                    <div class="clearfix">
+                      <button type="button" class="cancelbtn">Batal</button>
+                      <button type="button" class="deletebtn">Hapus</button>
+                    </div>
+                  </div>
+               </form>
+        </div>
+    </div>      
+
+ 
+    <div id="update-modal" class="del-modal">
+        <div class="modal-content">
+               <span class="close">&times;</span>
+               <form>
+                <div class="container">
+                    <h1>Perbarui Akun</h1>
+                    <p>Sudah yakin dengan datanya?</p>
+              
+                    <div class="clearfix">
+                      <button type="button" class="cancelbtn1">Batal</button>
+                      <button type="button" class="updatebtn">Perbaru</button>
+                    </div>
+                  </div>
+               </form>
+        </div>
+    </div>      
+
+
+
+  
+
+    <div class="account-form">
+        <img id="profile-image" src="../ICON/placeholder.png" alt="Profile Picture" onclick="triggerFileInput()">
+        <input type="file" id="file-input" style="display: none;" onchange="changeProfilePicture()">
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="admin">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="admin@gmail.com">
+            
+            <label for="tel">Telepon:</label>
+            <input type="tel" id="tel" name="tel" placeholder="081384423973">
+
+            <label for="valid">Tanggal Bergabung</label>
+            <input type="text" id="valid" name="valid" placeholder="11-08-2024">
+            
+            <label for="valid">Valid:</label>
+            <input type="text" id="valid" name="valid" placeholder="12-08-2024">
+            <br>
+            
+            <button type="button" class="update" id= "update"onclick="updateProfile()">Perbarui</button>
+            <br>
+            <button type="button" class="delete" id="delete" onclick="deleteProfile()">Hapus</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <table>
+        <caption>Jadwal Latihan</caption>
+        <thead>
+            <tr>
+                <th>Hari</th>
+                <th>Jam</th>
+                <th>Jenis Latihan</th>
+                <th>Durasi</th>
+                <th>Instruktur</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Senin</td>
+                <td>8:00 WIB</td>
+                <td>Yoga</td>
+                <td>1 jamr</td>
+                <td>Arya</td>
+            </tr>
+            <tr>
+                <td>Selasa</td>
+                <td>9:00 WIB</td>
+                <td>kardio</td>
+                <td>30 menit</td>
+                <td>Ipin</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>6:00 WIB</td>
+                <td>Angkat Beban</td>
+                <td>1.5 Jam</td>
+                <td>Eko</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>7:00 WIB</td>
+                <td>Muay Thai</td>
+                <td>45 Menit</td>
+                <td>Susan </td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>5:00 WIB</td>
+                <td>Push</td>
+                <td>1 Jam</td>
+                <td>Koko</td>
+            </tr>
+            <tr>
+                <td>Sabtu</td>
+                <td>8:00 WIB</td>
+                <td>Pull</td>
+                <td>2 Jam</td>
+                <td> Davis</td>
+            </tr>
+            <tr>
+                <td>Minggu</td>
+                <td>Rest Day</td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <div class="socialmedia-container">
+            <h1>Sosial Media Kami</h1>
+            <br>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/rachmatgymofficial/"><img src="../ICON/instagram.png" alt="Instagram" class="socialmedia-image"></a>
+                <a href="https://api.whatsapp.com/send?phone=6285932838901&fbclid=PAZXh0bgNhZW0CMTEAAaZPpf8twWGN3xaUupQaeuLWDT4W1HA0VH6FAqF4ADOGDpFOauiRM5NAkxQ_aem_AU2bbtlC9d_0JE0RyyRevQn5KqD0HHKAU9l5CN60qGxesz8XfBq2fSIno3hRgdl83RiVnWWwN0wzoS_4IbFYkMbs"><img src="../ICON//whatsapp.png" alt="WhatsApp" class="socialmedia-image"></a>
+            </div>
+            <br>
+            <h1>JAM OPERASIONAL</h1>
+            <p>Senin-Jumat: 10:00 - 22:00</p>
+            <p>Sabtu: 10:00 - 23:00</p>
+        </div>
+            <div class="map-container">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.449029917567!2d106.83476187475273!3d-6.464658993526978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1e1f0233945%3A0x6db2e45235e797de!2sRachmat%20Fitness!5e0!3m2!1sid!2sid!4v1719220261017!5m2!1sid!2sid" width="400" height="300" style="border-radius:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Jl. Raya Cikaret No.8, RT.01/RW.04 16914 Tengah Jawa Barat</p>
+                </div>
+            </div>
+            
+        <div class="copyright">
+            <p>Hakcipta © 1995 - 2024 RACHMAT GYM</p>
+        </div>
+    </footer>
+
+    <script src="home-js.js"></script>
+</body>
+</html>

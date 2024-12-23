@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RG TEAM Free Trial</title>
+    <link rel="stylesheet" href="freetrial-css.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="home-js.js"></script>
+
+</head>
+<body>
+    <header>
+        <img id="Logo" src="../ICON/ICON.jpg" alt="RG TEAM">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" id="contact">Kontak</a></li>
+                <li><a href="#" id="free-trial">Coba Gratis</a></li>
+                <li><a href="#" id="home">Beranda</a></li>
+                <li><a href="#" id="login-link">Masuk</a></li>
+                <li> <a href="#" id="account-link" style="display:none; margin-left:-70px;">Akun</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <div class="container">
+        <div class="form-background">
+            <h2>Bentuk Tubuh Impian Anda Dimulai Dari Sekarang</h2>
+            <ul>
+            <li><h1>Personal Trainer</h1></li>
+            <li><h1><span class="highlight">Personal Diet Program</span></h1></li>
+            <li><h1>Nutritional Coaching</h1></li>
+            <li><h1><span class="highlight">Progress Monitoring</span></h1></li>
+            </ul>
+        </div>
+        <div class="form-container">
+            <h1>Let's Try <span class="highlight">RG TEAM</span></h1>
+            <form id="trialForm">
+                <div class="form-group">
+                    <label for="city">Pilih Kota Anda </label>
+                    <select id="city" required>
+                        <option value="">Pilih kota Anda</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Yogyakarta">Yogyakarta</option>
+                        <option value="Bali">Bali</option>
+                    </select>
+                </div>
+                
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                           <span class="close">&times;</span>
+                           <h2>Login</h2>
+                           <form>
+                               <label for="username"></label>
+                               <input type="text" id="username" name="username"  placeholder="Username" required>
+                               <br>
+                               <label for="password"></label>
+                               <input type="password" id="password" name="password" required placeholder="Password">
+                               <br>
+                               <button type="submit" id="loginButton">Login</button>
+                           </form>
+                    </div>
+                </div>      
+               
+                <div class="form-group">
+                    <label for="name">Nama Anda</label>
+                    <input type="text" id="name" placeholder="Nama lengkap" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor Handphone Anda </label>
+                    <input type="tel" id="phone" placeholder="+62" pattern="(62)[0-9]{5,20}" required >
+                </div>
+                <div class="form-group">
+                    <label for="confirmPhone">Konfirmasi Nomor Handphone </label>
+                    <input type="tel" id="confirmPhone" placeholder="Konfirmasi nomor handphone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Anda </label>
+                    <input type="email" id="email" placeholder="Email aktif Anda" required>
+                </div>
+               
+                <button type="submit" id="daftar" onclick="daftarmodal()">DAFTAR</button>
+            </form>
+        </div>
+    </div>
+
+    
+    
+    <footer>
+        <div class="socialmedia-container">
+            <h1>Sosial Media Kami</h1>
+            <br>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/rachmatgymofficial/"><img src="../ICON/instagram.png" alt="Instagram" class="socialmedia-image"></a>
+                <a href="https://api.whatsapp.com/send?phone=6285932838901&fbclid=PAZXh0bgNhZW0CMTEAAaZPpf8twWGN3xaUupQaeuLWDT4W1HA0VH6FAqF4ADOGDpFOauiRM5NAkxQ_aem_AU2bbtlC9d_0JE0RyyRevQn5KqD0HHKAU9l5CN60qGxesz8XfBq2fSIno3hRgdl83RiVnWWwN0wzoS_4IbFYkMbs"><img src="../ICON//whatsapp.png" alt="WhatsApp" class="socialmedia-image"></a>
+            </div>
+            <br>
+            <h1>JAM OPERASIONAL</h1>
+            <p>Senin-Jumat: 10:00 - 22:00</p>
+            <p>Sabtu: 10:00 - 23:00</p>
+        </div>
+            <div class="map-container">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.449029917567!2d106.83476187475273!3d-6.464658993526978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1e1f0233945%3A0x6db2e45235e797de!2sRachmat%20Fitness!5e0!3m2!1sid!2sid!4v1719220261017!5m2!1sid!2sid" width="400" height="300" style="border-radius:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Jl. Raya Cikaret No.8, RT.01/RW.04 16914 Tengah Jawa Barat</p>
+                </div>
+            </div>
+            
+        <div class="copyright">
+            <p>Hakcipta © 1995 - 2024 RACHMAT GYM</p>
+        </div>
+    </footer>
+    <script src="home-js.js"></script>
+</body>
+</html>
