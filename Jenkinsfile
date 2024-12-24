@@ -28,7 +28,7 @@ pipeline {
                     sh """
                     docker stop ${CONTAINER_NAME} || true
                     docker rm ${CONTAINER_NAME} || true
-                    docker run -d --name ${CONTAINER_NAME} -p 9898:80 ${IMAGE_NAME}
+                    docker run -d --name ${CONTAINER_NAME} -p 8681:80 ${IMAGE_NAME}
                     """
                 }
             }
