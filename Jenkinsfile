@@ -11,7 +11,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone repository dari GitHub
-                git branch: 'main', url: "${GIT_REPO}"
+                git branch: 'master', url: "${GIT_REPO}"
             }
         }
         stage('Build Docker Image') {
